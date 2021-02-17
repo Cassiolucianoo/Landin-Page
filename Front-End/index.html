@@ -8,6 +8,7 @@
 
 <body>
 <section>
+  <div class="ciclo"></div>
   <header>
     <a href="#" ><img src = "img/logo.png" class="logo"></a>
     <ul>
@@ -17,17 +18,35 @@
   </header>
     <div class="content">
         <div class="textBox">
-          <h2> 
-            Suco Pronto Me Bebe Na Praia <br> Garrafa 500ml ...<apan>Start</apan></apan></h2>
-          <p>Clique e descubra nossas origens, sabores, transparência e tudo o que a gente acredita. Conheça a Natural Suco Pronto nossa Pura Verdade. A Melhor Opção para Você.<br> Faça o seu Kit.
-          </p>
+          <h2>  <span>Suco</span> Pronto Me Bebe Na Praia </h2>
+          <p>Clique e descubra nossas origens, sabores, transparência e tudo o que a gente acredita. Conheça a Natural Suco Pronto nossa Pura Verdade.
+           A Melhor Opção para Você.<br> Faça o seu Kit.</p>
           <a href="#">Cadastre</a>
         </div>
-
-    </div>
-  
+        <div class="imgBox">
+          <img src="img/img1.png" class="sucosnaturais">
+        </div>
+      </div>
+      <ul class="next">
+        <li><img src="/img/next1.png" onclick="imgSlider('img/img1.png');trocarCorCicle('#C52342')"></li>
+        <li><img src="/img/next2.png" onclick="imgSlider('img/img2.png');trocarCorCicle('#92C64C')"></li>
+        <li><img src="/img/next3.png" onclick="imgSlider('img/img3.png');trocarCorCicle('#EB6A16')"></li>
+      </ul>
+      <ul class="social">
+        <li><a href="#"><img src="/img/facebook.png"></a></li>
+        <li><a href="#"><img src="/img/instagram.png"></a></li>
+        <li><a href="#"><img src="/img/twitter.png"></a></li>
+      </ul>
 </section>
 
+<script type="text/javascript">
+  function imgSlider(anything){
+    document.querySelector('.sucosnaturais').src = anything;
+  }
+  function trocarCorCicle(color){
+    const ciclo = document.querySelector('.ciclo')
+    ciclo.style.background = color;
+  }
+</script>
 </body>
-
 </html>
