@@ -12,3 +12,4 @@ function imgSlider(anything){
     const text = document.getElementById("paragrafo")
     .innerHTML = texto 
   }
+
