@@ -1,0 +1,40 @@
+Vista 3mil vezes
+
+0
+
+
+ <html>
+  <head>
+   <title>Efeito digitar em página web</title>
+
+
+      <script type="text/javascript">
+
+
+       var posicao = 0;
+       var mensagem = "Sua mensagem aqui                      ";  //Esse texto
+
+         function rola() {
+         document.getElementById("lugar").innerHTML = 
+           mensagem.substring(posicao,mensagem,length);
+             posicao++;
+           if (posicao == mensagem.length) {
+                posicao = 0;
+               }
+           setTimeout("rola()", 130); 
+      }
+
+
+    </script>
+     </head>
+
+    <body onload="rola()">
+   <div id="lugar"></div> 
+  </body>
+</html>   
+
+
+
+<input type="text" placeholder="Nome" />
+<input type="password" placeholder="senha" />
+<input type="text" placeholder="Email" />

@@ -1,0 +1,67 @@
+<title>Efeito digitar em página web</title>
+	
+<style type="text/css">
+    #vermelho {
+        color: red;
+    }
+    
+    #verde {
+        color:green;
+    }
+    
+    #azul {
+        color:blue;
+    }
+    
+    #preto {
+        color:black;
+    }
+</style>
+
+<script type="text/javascript">
+    var vermelho = "Ola a todos";  //Esse texto
+    
+    function cor1() {
+        document.getElementById("vermelho").innerHTML = vermelho
+    }
+    
+    var verde = "Ola a todos";  //Esse texto
+    
+    function cor2() {
+        document.getElementById("verde").innerHTML = verde
+    }
+    
+    var azul = "Ola a todos";  //Esse texto
+    
+    function cor3() {
+        document.getElementById("azul").innerHTML = azul
+    }
+    
+    var preto = "Ola a todos";  //Esse texto
+    
+    function cor4() {
+        document.getElementById("preto").innerHTML = preto
+    }
+</script>
+</head>
+
+<body">
+<div id="vermelho"></div>
+<div id="verde"></div> 
+<div id="azul"></div>
+<div id="preto"></div>
+
+<input type="button" name="vermelho" onclick="cor1()" value="Vermelho">
+<br>
+<br>
+
+<input type="button" name="verde" onclick="cor2()" value="Verde">
+<br><br>
+
+<input type="button" name="azul" onclick="cor3()" value="Azul">
+<br><br>
+
+<input type="button" name="preto" onclick="cor4()" value="Preto">
+</body>
+
+</html>   
