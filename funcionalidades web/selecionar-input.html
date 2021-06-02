@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+ <body>
+    <center>
+        <form name="formulario" onsubmit="return limite(this)">
+            <input type="text" value="" maxlength="" name="nome" onkeyup="limite(this.value)" />
+            <br><br>
+            <input type="text" value="" class="sobrenome" maxlength="5" name="sobrenome" onkeyup="limite(this.value)" />
+            <br><br>
+            <input type="text" value="" maxlength="5" name="idade" onkeyup="limite(this.value)" />
+            <br><br>
+            <input type="text" value="" maxlength="5" name="celular" onkeyup="limite(this.value)" />
+            <br><br>
+            <input type="submit" value="Enviar" name="submit" />
+        </form>
+    </center>
+</body>
+
+   <!-- Para o exemplo apresentado aqui, vou apenas verificar se o campo esta ou não vazio. Pois deixo o controle da quantidade de caracteres definida no próprio HTML [maxlength] -->
+
+<script>
+    function limite(form) {
+
+        if (formulario.nome.value.length < 1) {
+            return false;
+           
+              
+        }
+        document.formulario.sobrenome.disabled = false;
+       
+        if (formulario.sobrenome.value.length < 1) {
+            return false;
+           
+        }
+        document.formulario.idade.disabled = false;
+        
+        if (formulario.idade.value.length < 1) {
+            return false;
+           
+            
+        }
+        document.formulario.celular.disabled = false;
+        
+        if (formulario.celular.value.length < 1) {
+            return false;
+         
+          
+        }
+        document.formulario.submit.disabled = false;
+        return true;
+    }
+
+    var habilitar = '' ?   true : false ;
+    document.formulario.sobrenome.disabled = habilitar;
+    document.formulario.sobrenome.disabled = !habilitar;
+
+    document.formulario.idade.disabled = habilitar;
+    document.formulario.idade.disabled = !habilitar;
+
+    document.formulario.celular.disabled = habilitar;
+    document.formulario.celular.disabled = !habilitar;
+    
+    document.formulario.submit.disabled = habilitar;
+    document.formulario.submit.disabled = !habilitar;
+</script>
+
+
+
+
+     
+
+</html>
